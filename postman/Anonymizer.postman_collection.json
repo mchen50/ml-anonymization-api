@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "f9a1f3c9-babc-4611-8a6a-5b09741229b1",
+		"name": "Anonymizer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Root",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST Anonymize text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Hi, I am Ming. I live in Tokyo. We live in Tokyo with a dog named Haru.\",\n    \"model_language\": \"en\",\n    \"model_size\": \"sm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_ENDPOINT}}/anoymize",
+					"host": [
+						"{{APP_ENDPOINT}}"
+					],
+					"path": [
+						"anoymize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
