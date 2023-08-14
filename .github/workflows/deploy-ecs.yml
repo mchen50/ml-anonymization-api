@@ -36,7 +36,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/ml-anonymization-api-gha-cicd
           role-session-name: deploy-infra-session
-          aws-region: ${{ inputs.aws_region }}
+          aws-region: ${{ env.AWS_REGION }}
 
       - name: Login to Amazon ECR
         id: login-ecr
