@@ -34,7 +34,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/ml-infra-gha-cicd
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/ml-anonymization-api-gha-cicd
           role-session-name: deploy-infra-session
           aws-region: ${{ inputs.aws_region }}
 
