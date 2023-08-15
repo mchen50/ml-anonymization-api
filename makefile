@@ -15,8 +15,8 @@ serve-local:
 	pipenv run uvicorn app.main:app --reload
 
 # Run API with Docker
-compose-up: gen-requirements
-	docker compose up
+compose-up:
+	docker compose up -d --no-deps --build
 
 compose-down:
 	docker compose down
