@@ -9,7 +9,16 @@
 			"name": "GET Root",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{APP_ENDPOINT}}/",
+					"host": [
+						"{{APP_ENDPOINT}}"
+					],
+					"path": [
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -20,7 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"text\": \"Hi, I am Ming. I live in Tokyo. We live in Tokyo with a dog named Haru.\",\n    \"model_language\": \"en\",\n    \"model_size\": \"sm\"\n}",
+					"raw": "{\n    \"text\": \"My son's name is ShuSaku and he is 180cm tall. We live happily in Seoul.\",\n    \"model_language\": \"en\",\n    \"model_size\": \"sm\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -28,12 +37,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{APP_ENDPOINT}}/anoymize",
+					"raw": "{{APP_ENDPOINT}}/anonymize/",
 					"host": [
 						"{{APP_ENDPOINT}}"
 					],
 					"path": [
-						"anoymize"
+						"anonymize",
+						""
 					]
 				}
 			},

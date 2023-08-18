@@ -24,8 +24,8 @@ def load_models() -> dict[str, spacy.Language]:
 models = load_models()
 
 router = APIRouter(
-    prefix="/anoymize",
-    tags=["anoymize"],
+    prefix="/anonymize",
+    tags=["anonymize"],
     responses={404: {"description": "Not found"}},
 )
 
